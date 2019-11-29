@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="static\js\client\types\jquery\**" />
+    <Compile Remove="static\tmp\bower_components\**" />
+    <Content Remove="static\js\client\types\jquery\**" />
+    <Content Remove="static\tmp\bower_components\**" />
+    <EmbeddedResource Remove="static\js\client\types\jquery\**" />
+    <EmbeddedResource Remove="static\tmp\bower_components\**" />
+    <None Remove="static\js\client\types\jquery\**" />
+    <None Remove="static\tmp\bower_components\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="static\js\client\delete_ui.localize.ts" />
+    <None Remove="static\js\client\lv_ui.ts" />
+    <None Remove="static\js\client\ui.context.menu.ts" />
+    <None Remove="static\js\client\ui.dp.ts" />
+    <None Remove="static\js\client\ui.localize.js" />
+    <None Remove="static\js\client\ui.s2.ts" />
+    <None Remove="static\js\client\ui.searchbox.ts" />
+    <None Remove="static\js\client\ui.services.ts" />
+    <None Remove="static\js\client\ui.slickgrid.ts" />
+    <None Remove="static\js\client\ui.s_pager.ts" />
+    <None Remove="static\requirejs_utils.ts" />
+    <None Remove="static\reqUtils.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="node_modules\%40types\angular\package.json" />
+    <Content Include="node_modules\%40types\jquery\package.json" />
+    <Content Include="node_modules\%40types\sizzle\package.json" />
+    <Content Include="static\js\client\ui.localize.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="node_modules\%40types\angular\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\angular\jqlite.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\dist\jquery.slim.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\JQuery.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\JQueryStatic.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\legacy.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\jquery\misc.d.ts" />
+    <TypeScriptCompile Include="node_modules\%40types\sizzle\index.d.ts" />
+    <TypeScriptCompile Include="static\js\client\lv_ui.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.dp.ts" />
+    <TypeScriptCompile Include="static\js\client\delete_ui.localize.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.s2.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.context.menu.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.searchbox.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.services.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.slickgrid.ts" />
+    <TypeScriptCompile Include="static\js\client\ui.s_pager.ts" />
+    <TypeScriptCompile Include="static\requirejs_utils.ts" />
+    <TypeScriptCompile Include="static\reqUtils.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="node_modules\%40types\angular\LICENSE" />
+    <None Include="node_modules\%40types\angular\README.md" />
+    <None Include="node_modules\%40types\jquery\LICENSE" />
+    <None Include="node_modules\%40types\jquery\README.md" />
+    <None Include="node_modules\%40types\sizzle\LICENSE" />
+    <None Include="node_modules\%40types\sizzle\README.md" />
+  </ItemGroup>
+
+</Project>

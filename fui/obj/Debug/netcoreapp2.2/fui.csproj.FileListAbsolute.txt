@@ -1,0 +1,16 @@
+C:\code\dotnet\lv-db-core\fui\obj\Debug\netcoreapp2.2\fui.csprojAssemblyReference.cache
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\fui.deps.json
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\fui.runtimeconfig.json
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\fui.runtimeconfig.dev.json
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\fui.dll
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\fui.pdb
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.csproj.CoreCompileInputs.cache
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.RazorAssemblyInfo.cache
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.RazorAssemblyInfo.cs
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.AssemblyInfoInputs.cache
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.AssemblyInfo.cs
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.RazorTargetAssemblyInfo.cache
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.dll
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.pdb
+C:\ReEngine\fui\obj\Debug\netcoreapp2.2\fui.csprojAssemblyReference.cache
+C:\ReEngine\fui\bin\Debug\netcoreapp2.2\static\js\client\ui.localize.js

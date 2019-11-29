@@ -1,0 +1,14 @@
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\ReEngine.Web.deps.json
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\ReEngine.Web.dll
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\ReEngine.Web.pdb
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\RazorLight.dll
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\ReEngine.dll
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\RazorLight.pdb
+C:\ReEngine\SureERP\ReEngine.Apps\bin\Release\netcoreapp2.2\ReEngine.pdb
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.csprojAssemblyReference.cache
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.csproj.CoreCompileInputs.cache
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.AssemblyInfoInputs.cache
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.AssemblyInfo.cs
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.csproj.CopyComplete
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.dll
+C:\ReEngine\SureERP\ReEngine.Apps\obj\Release\netcoreapp2.2\ReEngine.Web.pdb

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "static/js/client/vendors/summerNote/styles/summernote-bs4.css",
+    "inputFile": "static/js/client/vendors/summerNote/styles/summernote-bs4.scss"
+  },
+  {
+    "outputFile": "static/js/client/vendors/summerNote/styles/summernote-bs3.css",
+    "inputFile": "static/js/client/vendors/summerNote/styles/summernote-bs3.scss"
+  }
+]

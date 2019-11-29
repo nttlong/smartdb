@@ -1,0 +1,1 @@
+﻿var dms_mdl = angular.module("ui-dms", ["q-ui"]);

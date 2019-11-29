@@ -1,0 +1,151 @@
+
+/*responsive */
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 1366px) {
+.checkbox input {
+	width: auto;
+	height: auto;
+	margin-right: 10px;
+}
+.right_ModalAddFile .content {
+	max-height: 643px;
+}
+}
+
+@media screen and (max-width: 1280px) {
+#header .main_func > li {
+	margin: 0px 15px;
+}
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1045px) {
+#header .main_time {
+	display: none;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.modal-dialog.open {
+	min-width: 1024px;
+	overflow: scroll;
+}
+.main_box .col-6 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.mb_15_1024 {
+	margin-bottom: 15px;
+}
+.box_check ul {
+	width: 100%;
+	float: none;
+}
+.modal-02 {
+	display: block;
+}
+.modal-02 .box_content {
+	width: 100%;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+.modal-body-content {
+	float: none;
+}
+.modal-content-plus {
+	z-index: 0;
+	position: relative;
+	top: 0px;
+	right: 0px;
+	transition: all ease 0.5s;
+}
+.modal-content-link-data {
+	width: 100%;
+	border: none;
+}
+.modal-content-plus .title {
+	right: -80px;
+}
+.modal-body-header .ip_requirement {
+	width: calc(100% - 170px);
+}
+.modal-content-plus.open {
+	right: 0px;
+	border-radius: 3px;
+	width: calc(100% - 100px);
+	margin: 0 auto;
+}
+.modal-content-plus .title {
+	display: none;
+}
+.content_link {
+	display: block;
+	margin: 20px 0 0 0;
+}
+.content_data {
+	display: block;
+	margin: 20px 0 0 0;
+}
+.modal-dialog {
+	padding: 0 3%;
+}
+.team_member {
+	position: relative;
+}
+.main_box .tab-content {
+	height: 100%;
+}
+.content_3.show_hidden .display_n {
+	display: inline-block;
+}
+}
+
+@media screen and (max-width: 768px) {
+img {
+	max-width: 100%;
+}
+.inner {
+	box-sizing: border-box;
+	padding: 0 3%;
+}
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 240px) {
+}
+
+/*--Extra large xl--*/
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+}
+
+/*--Large lg--*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/*--Medium md--*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*--Small sm--*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/*--Extra small xs--*/
+@media screen and (max-width: 575px) {
+}
