@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReEngine</name>
+    </assembly>
+    <members>
+        <member name="T:ReEngine.ActionContext">
+            <summary>
+            Serve for ajax post
+            </summary>
+        </member>
+        <member name="M:ReEngine.ActionContext.GetPostData``1">
+            <summary>
+            Get and convert post data from client
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.Config.GetValue``1(System.String,System.String,System.Boolean)">
+            <summary>
+            Load value from config file into an object with type in T
+            <para>
+            Example:
+            </para>
+            <para>
+            Config file name is 'MyConfig.xml' (this function just run with xml file format) with content looks like below
+            </para>
+            <para>
+            &lt;txt-value value='mytxt''/&gt;
+            </para>
+            <para>
+            &lt;obj-value&gt;
+            &lt;txt-value value="hello"/&gt;
+            &lt;obj-value/&gt; 
+            </para>
+            <para>
+            Jut call GetValue&lt;string;&gt;("MyConfig.xml","txt-value")
+            </para>
+            <para>
+            GetValue&lt;MyClass&gt;("MyConfig.xml","obj-value")
+            </para>
+            <para>
+            public class MyClass {
+            </para>
+            public string TxtValue {get;set;}
+            <para>
+            </para>
+            <para>
+            }
+            </para>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ConfigPath"></param>
+            <param name="TagName"></param>
+            <example>
+            Config file name is 'MyConfig.xml' (this function just run with cml file format) with content like that
+            </example>
+            <returns></returns>
+        </member>
+        <member name="P:ReEngine.Context.BaseAppDirectory">
+            <summary>
+            Root Physical Directory Path of web host
+            </summary>
+        </member>
+        <member name="P:ReEngine.DynamicMethodInfo.Method">
+            <summary>
+            The static method
+            </summary>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetCurrentPageId">
+            <summary>
+            Get current page id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ReEngine.HttpUtils.HttpContext">
+            <summary>
+            Curent http context
+            </summary>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetSessionValue``1(System.String,``0)">
+            <summary>
+            get session has been store in http Session
+            <para>
+            if key was not found in http session and defaultvalue has been set.
+            Default value will be store in session with sepcifiy key
+            </para>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="Key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.SetSessionValue(System.String,System.Object)">
+            <summary>
+            Set Session Value by key
+            <para>
+            if the value is null nothing to do
+            </para>
+            </summary>
+            <param name="Key"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetLanguageCode">
+            <summary>
+            Get Current language code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetViewPath">
+            <summary>
+            Get view path of page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetApp">
+            <summary>
+            Get current Application info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetAbsUrl">
+            <summary>
+            Get full url of this web site
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetAbsUrlOfApp">
+            <summary>
+            Get full url of current Applcation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.SetPagePathToCurrentContext(System.String)">
+            <summary>
+            Set relative url to http current context
+            </summary>
+            <param name="refFilePath"></param>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetFullUrlOfCurrentRequest">
+            <summary>
+            Get Absolute url of current request including query string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.HttpUtils.GetLoginUrlOfApp">
+            <summary>
+            Get login url
+            <para>
+            if LoginUrl of current app in Config.xml start with "~/"  will return full url of web site and login url. 
+            Exmaple: Web host at https://localhost:5000 and LoginUrl of current app in Config.xml is '~/mylogin'. 
+            The method will return https://localhost:5000/mylogin 
+            </para>
+            <para>
+            if LoginUrl of current app in Config.xml is in another domain the method will return LoginUrl 
+            </para>
+            <para>
+            default it will return full url of current app (see  GetAbsUrlOfApp) and Loginurl
+            </para>
+            </summary>
+            <para>if LoginUrl of current app in Config.xml start with "~/"  will return full url of web site and login url </para>
+            <returns></returns>
+        </member>
+        <member name="T:ReEngine.Localize">
+            <summary>
+            Manage language resource and localize
+            </summary>
+        </member>
+        <member name="F:ReEngine.Localize.LANGUAGECODE_KEY">
+            <summary>
+            The Key of lamguage code store in HttpSession
+            </summary>
+        </member>
+        <member name="M:ReEngine.Localize.I18nGlobalFilePath(System.String)">
+            <summary>
+            config.xml->web-application/apps-directory
+            Đọc cấu hình file 
+            </summary>
+            <summary>
+            Lấy đường dẫn đến file ngôn ngữ global
+            <para>
+            Get full physical path of global i18n
+            </para>
+            </summary>
+            <param name="LangCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.Localize.SetLanguageCode(System.String)">
+            <summary>
+            Set language code to session with key is in LANGUAGECODE_KEY
+            <seealso cref="F:ReEngine.Localize.LANGUAGECODE_KEY"/>
+            </summary>
+            <param name="HttpContext"></param>
+            <param name="LanguageCode"></param>
+        </member>
+        <member name="M:ReEngine.Localize.GetLanguageCode">
+            <summary>
+            Get language code in Http Session
+            <para>
+            if session is new default language code in config.xml at web-application/default-localize/language will be return;
+            </para>
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.Localize.GetLanguageSupports">
+            <summary>
+            Get language support
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ReEngine.MediaContent">
+            <summary>
+            Return media content
+            </summary>
+        </member>
+        <member name="P:ReEngine.MediaContent.Data">
+            <summary>
+            Byte of content
+            </summary>
+        </member>
+        <member name="P:ReEngine.MediaContent.MimeType">
+            <summary>
+            Mime type
+            </summary>
+        </member>
+        <member name="M:ReEngine.MediaContent.GetMimeTypeFromFilePath(System.String)">
+            <summary>
+            Get mime type form file path
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReEngine.MediaFile">
+            <summary>
+            Media file
+            </summary>
+        </member>
+        <member name="P:ReEngine.MediaFile.FileName">
+            <summary>
+            Absolute physical path
+            </summary>
+        </member>
+        <member name="T:ReEngine.Redirect">
+            <summary>
+            Redirect action
+            </summary>
+        </member>
+        <member name="P:ReEngine.Redirect.Url">
+            <summary>
+            Url to redirect
+            </summary>
+        </member>
+        <member name="T:ReEngine.AsyncMediaContent">
+            <summary>
+            Download a big file
+            </summary>
+        </member>
+        <member name="P:ReEngine.AsyncMediaContent.AysncStream">
+            <summary>
+            Streaming must be acsyn get
+            </summary>
+        </member>
+        <member name="P:ReEngine.AsyncMediaContent.FileName">
+            <summary>
+            Will be download If this proptery is not null 
+            </summary>
+        </member>
+        <member name="T:ReEngine.ProviderLoader">
+            <summary>
+            This stattic class use for load Provider
+            <para>
+            Provider including:
+            </para>
+            <para>
+            1- An inetrface declaring
+            </para>
+            <para>
+            2- An Implementation declaring
+            </para>
+            </summary>
+        </member>
+        <member name="M:ReEngine.ProviderLoader.Get``1(System.String,System.String)">
+            <summary>
+            Load provider
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="ConfigPath"></param>
+            <param name="TagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ReEngine.ScriprLoader.LoadMethod(System.String,System.String,System.Action{System.Exception,ReEngine.DynamicMethodInfo})">
+            <summary>
+            Load script source and watch change file
+            </summary>
+            <param name="path">Relative path to source code from root folder</param>
+            <param name="method">Method name</param>
+            <returns></returns>
+            <exception cref="T:ReEngine.Errors.ScriptSourceWasNotFound"/>
+            <exception cref="T:ReEngine.Errors.ScriptSourceError"/>
+        </member>
+        <member name="P:ReEngine.ServiceContext.DelayTimeToNext">
+            <summary>
+            Miliseconds delay time for next step in process
+            </summary>
+        </member>
+        <member name="P:ReEngine.ServiceContext.Source">
+            <summary>
+            Full source of service script
+            </summary>
+        </member>
+        <member name="P:ReEngine.ServiceContext.IsError">
+            <summary>
+            If any error micro service will be stop
+            </summary>
+        </member>
+        <member name="P:ReEngine.ServiceContext.RelPath">
+            <summary>
+            Relative path from Application directory
+            </summary>
+        </member>
+        <member name="F:ReEngine.Utils.objCheckIfPrimitiveTypeCache">
+            <summary>
+            Private field sever for lock and cache
+            </summary>
+        </member>
+        <member name="M:ReEngine.Utils.IsPrimitiveType(System.Type)">
+            <summary>
+            Chech type of value is primitive types
+            <para>
+            The method has optimize by cache in Hashtable data
+            </para>
+            </summary>
+            <param name="declaringType"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
